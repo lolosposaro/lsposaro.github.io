@@ -5,10 +5,14 @@ body{
     text-emphasis: none;
     text-align: center;
     align-items: center;
-    padding: 50px;
+    padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.btn-menu div {
+    padding: 20px;
+}
+
 .pure-material-button-contained {
     position: relative;
     display: inline-block;

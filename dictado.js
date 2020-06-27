@@ -24,9 +24,18 @@ const movs = [
     { name: "Ding Zhou" }
 ];
 
-var optNum = 5;
+function mostrarMovimiento() {
+    var rdmMov = movs[Math.floor(Math.random() * movs.length)].name;
+    var elementNode = document.createElement('h1');
+    var textNode = document.createTextNode(" => " + rdmMov);
 
-for (let i = 0; i < optNum; i++) {
-    var rdmNum = movs[Math.floor(Math.random() * movs.length)].name;
-    console.log("Random number => " + rdmNum);
+    elementNode.appendChild(textNode);
+    document.body.appendChild(elementNode);
+}
+
+function start(cantidadDeMovimientos) {
+    for (let i = 0; i < cantidadDeMovimientos; i++) {
+        mostrarMovimiento();
+        console.log(i);
+    }
 }

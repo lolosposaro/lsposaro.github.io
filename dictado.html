@@ -4,17 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="dictado.js"></script>
-    <link rel="stylesheet" href="css/index.css">
+    <script src="js/dictado.js"></script>
     <link rel="stylesheet" href="css/posiciones.css">
     <title>Posiciones</title>
 </head>
 
 <body>
+    <div class="mov">
+        <h1 id="movid">Hola</h1>
+    </div>
     <div class="wrap">
         <div class="select">
             <!--Select with pure css-->
-            <select class="select-text" required>
+            <select class="select-text" id="cantidadMov" name="cantidadMov" required>
                 <option value="" disabled selected></option>
                 <option value="5">5</option>
                 <option value="7">7</option>
@@ -25,7 +27,7 @@
             <label class="select-label">Cantidad de Movimientos</label>
             <!--Select with pure css-->
         </div>
-        <button class="pure-material-button-contained" onclick="start(7)">Start</button>
+        <button class="pure-material-button-contained" onclick="start()">Start</button>
     </div>
 </body>
 

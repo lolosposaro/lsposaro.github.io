@@ -24,19 +24,16 @@ const movs = [
     { name: "Ding Zhou" }
 ];
 
-// var input =
-function mostrarMovimiento() {
+function getMov() {
     var rdmMov = movs[Math.floor(Math.random() * movs.length)].name;
-    var elementNode = document.createElement('h1');
-    var textNode = document.createTextNode(" => " + rdmMov);
+    document.getElementById("movid").innerHTML = rdmMov;
+    console.log(rdmMov);
 
-    elementNode.appendChild(textNode);
-    document.body.appendChild(elementNode);
 }
 
-function start(cantidadDeMovimientos) {
-    for (let i = 0; i < cantidadDeMovimientos; i++) {
-        mostrarMovimiento();
-        console.log(i);
+function start() {
+    var input = document.getElementById("cantidadMov").value
+    for (let i = 0; i < input; i++) {
+        setTimeout(() => { getMov() }, i * 2000);
     }
 }

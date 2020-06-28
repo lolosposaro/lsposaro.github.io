@@ -5,12 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="dictado.js"></script>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/posiciones.css">
     <title>Posiciones</title>
 </head>
 
 <body>
-    <div><button class="pure-material-button-contained" onclick="start(8)">Start</button>
+    <div class="wrap">
+        <div class="select">
+            <!--Select with pure css-->
+            <select class="select-text" required>
+                <option value="" disabled selected></option>
+                <option value="5">5</option>
+                <option value="7">7</option>
+                <option value="13">13</option>
+            </select>
+            <span class="select-highlight"></span>
+            <span class="select-bar"></span>
+            <label class="select-label">Cantidad de Movimientos</label>
+            <!--Select with pure css-->
+        </div>
+        <button class="pure-material-button-contained" onclick="start(7)">Start</button>
     </div>
 </body>
 

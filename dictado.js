@@ -24,6 +24,7 @@ const movs = [
     { name: "Ding Zhou" }
 ];
 
+// var input =
 function mostrarMovimiento() {
     var rdmMov = movs[Math.floor(Math.random() * movs.length)].name;
     var elementNode = document.createElement('h1');

@@ -27,7 +27,6 @@ const movs = [
 function getMov() {
     var rdmMov = movs[Math.floor(Math.random() * movs.length)].name;
     document.getElementById("movid").innerHTML = rdmMov;
-    console.log(rdmMov);
 
 }
 

@@ -1,0 +1,1 @@
+echo "test are OK!"

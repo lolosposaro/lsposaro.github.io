@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/dictado.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/dictado.css">
+    <title>Dictado</title>
+</head>
+
+<body>
+    <div class="mov">
+        <h1 id="movid">Hola</h1>
+    </div>
+    <div class="wrap">
+        <div class="select">
+            <!--Select with pure css-->
+            <select class="select-text" id="cantidadMov" name="cantidadMov" required>
+                <option value="" disabled selected></option>
+                <option value="5">5</option>
+                <option value="7">7</option>
+                <option value="13">13</option>
+            </select>
+            <span class="select-highlight"></span>
+            <span class="select-bar"></span>
+            <label class="select-label">Cantidad de Movimientos</label>
+            <!--Select with pure css-->
+        </div>
+        <button class="pure-material-button-contained" onclick="start()">Start</button>
+    </div>
+</body>
+
+</html>

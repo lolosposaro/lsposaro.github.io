@@ -315,7 +315,11 @@ img {
 .work__img {
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   overflow: hidden;
+  top: 50%;
 }
 .work__img img {
   transition: 1s;

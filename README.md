@@ -1,12 +1,10 @@
-# Scrollable 3D Animation with Three.js
+# Portfolio responsive complete
 
-- Watch the [full tutorial](https://youtu.be/Q7AOvWpIVHU) on YouTube
-- [Scrollable Three.js Animation](https://fireship.io/snippets/threejs-scrollbar-animation) Snippet
+A portfolio to show clients and recruiters as a CV where I can show my experience and knowlege in a fancy way!
+Props to [Bedimcode](https://www.youtube.com/c/Bedimcode)
 
-## Usage
+## Run the app
 
-```
-git clone <this-repo>
-npm install
-npm run dev
-```
+in the root of the project run `docker build -t{preffered-tag} .`
+after buiding the image run `docker run -p 80:8080 {preffered-tag}`
+Now the app will be live in 'localhost:8080'

@@ -2,103 +2,203 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lolo's Website</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- =====BOX ICONS===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Portfolio website complete</title>
   </head>
   <body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">Lolo</a>
+        </div>
 
-    <canvas id="bg"></canvas>   
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
 
-    <main>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
 
-      <header>
-        <h1>Lolo Sposaro</h1>
-        <p>🚀 Welcome to my website!</p>
-      </header>
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hi,<br />I'am <span class="home__title-color">Lorenzo</span><br />
+            Cloud Engineer
+          </h1>
 
+          <a href="assets/public/Lorenzo_Sposaro_CV.pdf" class="button">Download CV</a>
+        </div>
 
-      <blockquote>
-        <p>I like making stuff and putting it on the internet</p>
-      </blockquote>
+        <div class="home__social">
+          <a
+            href="https://www.linkedin.com/in/lorenzo-sposaro-85b9b2180/"
+            class="home__social-icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="" class="home__social-icon"><i class="bx bxl-slack"></i></a>
+          <a href="https://github.com/lolosposaro" class="home__social-icon"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div>
 
-      <section>
-        <h2>📜 Manifesto</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
+        <div class="home__img">
+          <img src="./assets/img/lolo-perfil1.jpg" alt="">
+        </div>
       </section>
 
-      <section class="light">
-        <h2>👩🏽‍🚀 Projects</h2>
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="assets/img/lolo-perfil2.jpeg" alt="" />
+          </div>
 
-        <h2>🏆 Accomplishments</h2>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
+          <div>
+            <h2 class="about__subtitle">I am Lorenzo</h2>
+            <p class="about__text">
+              Lorenzo is a DevOps Engineer that has proactively learned a set of DevOps skills such as Kubernetes, Jenkins, AWS, Docker, etc. Specializing in building and maintaining productive environments mainly focusing on great performance while still having cost-effective solutions using Containerized Cloud technologies.
+            </p>
+          </div>
+        </div>
       </section>
 
-      <blockquote>
-        <p>The best way out is always through <br>-Robert Frost</p>
-      </blockquote>
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
 
-      <section class="left">
-        <h2>🌮 Work History</h2>
+        <div class="skills__container bd-grid">
+          <div>
+            <h2 class="skills__subtitle">Profesional Skills</h2>
+            <p class="skills__text">
+              Along the years in the industry, I manage to gain experience in a
+              lot of technologies, this skillset is quite a good summay of it
+            </p>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-kubernetes skills__icon"></i>
+                <span class="skills__name">KUBERNETES</span>
+              </div>
+              <div class="skills__bar skills__k8s"></div>
+              <div>
+                <span class="skills__percentage">95%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-aws skills__icon"></i>
+                <span class="skills__name">AWS</span>
+              </div>
+              <div class="skills__bar skills__aws"></div>
+              <div>
+                <span class="skills__percentage">85%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-docker skills__icon"></i>
+                <span class="skills__name">DOCKER</span>
+              </div>
+              <div class="skills__bar skills__docker"></div>
+              <div>
+                <span class="skills__percentage">79%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-python skills__icon"></i>
+                <span class="skills__name">PYTHON</span>
+              </div>
+              <div class="skills__bar skills__python"></div>
+              <div>
+                <span class="skills__percentage">75%</span>
+              </div>
+            </div>
+          </div>
 
-        <h3>Rockwell Automation</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <h3>Tigo</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <h3>Leaselock</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
+          <div>
+            <img src="assets/img/work3.jpg" alt="" class="skills__img" />
+          </div>
+        </div>
       </section>
 
-      <blockquote>
-        <p>Thanks for visiting!</p>
-      </blockquote>
+      <!--===== WORK =====-->
+      <section class="work section" id="work">
+        <h2 class="section-title">Work & Studies</h2>
 
+        <div class="work__container bd-grid">
+          <div class="work__img">
+            <img src="assets/img/work1.jpg" alt="" />
+          </div>
+          <div class="work__img">
+            <img src="assets/img/work2.jpg" alt="" />
+          </div>
+          <div class="work__img">
+            <img src="assets/img/work3.jpg" alt="" />
+          </div>
+          <div class="work__img">
+            <img src="assets/img/work4.jpg" alt="" />
+          </div>
+          <div class="work__img">
+            <img src="assets/img/work5.jpg" alt="" />
+          </div>
+          <div class="work__img">
+            <img src="assets/img/work6.jpg" alt="" />
+          </div>
+        </div>
+      </section>
 
-    </main>
-    
-    <script type="module" src="/main.js"></script>
+      <!--===== CONTACT =====-->
+      <section class="contact section" id="contact">
+        <h2 class="section-title"><a href="mailto:sposarolorenzo@gmail.com?Subject=Interesado%en%tu%perfil">Contact Me</a></h2>
 
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+      <p class="footer__title">Lorenzo Sposaro's Portfolio</p>
+      <div class="footer__social">
+        <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
+      </div>
+      <p>&#169; 2021 copyright all right reserved</p>
+    </footer>
 
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

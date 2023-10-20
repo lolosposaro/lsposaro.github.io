@@ -12,3 +12,8 @@ variable "img" {
   type = string
   default = "nginx:1.26"
 }
+
+variable "img-backend" {
+  type = string
+  default = "nginx:1.26"
+}
